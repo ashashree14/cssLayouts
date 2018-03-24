@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Calculate dimensions</title>
+    <style>
+        .outer {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            background: rgb(50, 128, 206);
+        }
+
+        .box {
+            background: #f90;
+            width: 300px;
+            /* height: 300px; */
+            padding: 50px;
+            border: 2px solid black;
+            margin: 50px;
+        }
+
+        p {
+            background: rgb(179, 54, 168);
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box">
+            <p>Calculate Dimensions We have 2 box
+                <ol>
+                    <li>Content box: Contains border, padding, actual box width and height</li>
+                    <li>Containing box: Content box + margin</li>
+                </ol>
+                <ul>
+                    <li>Margin will be ignored(By browser) when inner box width increases and 
+                        has to fit inside the outer one</li>
+                    <li>
+                        If inner box width increases, it overflows out of outer box.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
